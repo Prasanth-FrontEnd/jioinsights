@@ -1,0 +1,45 @@
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 400px;
+}
+
+mat-grid-tile {
+  padding-top: 240px !important;
+}
+
+.mat-grid-list {
+  display: block;
+  position: relative;
+  padding-bottom: 240px !important;
+}
+
+h2 {
+  margin-bottom: 0px !important;
+  color: #f2904c;
+}
+
+ngb-rating {
+  color: #FFC107;
+  font-size: 20px;
+  float: right;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.mat-card{
+  display:flex;
+  flex-direction: column;
+}
+
+.mat-card-header {
+  flex-shrink: 0;
+}
+
+.mat-card-content{
+  flex-grow: 1;
+  overflow: auto;
+}

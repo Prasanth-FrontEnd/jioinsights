@@ -6,14 +6,7 @@
 .mat-button {
   font-size: 18px !important;
 }
-/* .button .span {
-  font-size: 18px !important;
-} */
 
 .example-spacer {
   flex: 1 1 auto;
-}
-
-.container {
-  height: auto;
 }

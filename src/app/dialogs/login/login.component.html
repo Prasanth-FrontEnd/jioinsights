@@ -1,0 +1,37 @@
+<mat-card>
+  <mat-card-title class="login-title">Login</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+
+    <p>
+      <mat-form-field appearance="outline" floatLabel="auto">
+        <input type="text" matInput placeholder="Email" formControlName="email">
+        <mat-error *ngIf="loginForm.controls['email'].invalid">
+          {{getError('email')}}
+        </mat-error>
+      </mat-form-field>
+    </p>
+
+    <p>
+      <mat-form-field appearance="outline" floatLabel="auto">
+        <input type="password" matInput placeholder="Password" formControlName="password">
+        <mat-error *ngIf="!loginForm.controls['password'].valid">
+          {{getError('pass')}}
+        </mat-error>
+      </mat-form-field>
+    </p>
+
+    <p *ngIf="incorrect" class="error">
+      <mat-error>
+        {{getError('incorrect')}}
+      </mat-error>
+    </p>
+
+    <div class="button">
+      <button type="submit" mat-button class="login-button"
+      [disabled]="!loginForm.valid">Login</button>
+    </div>
+
+    </form>
+  </mat-card-content>
+</mat-card>

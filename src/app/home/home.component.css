@@ -1,0 +1,66 @@
+/* .container {
+  height: 100%;
+} */
+.entertainment {
+  /* background-image: url('/assets/images/entertainment5.jpg') !important; */
+  background-size: 1535px 650px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 83.3%;
+  filter: blur(2px);
+}
+.centered {
+  position: absolute;
+  top: 67%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+.centered-right {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+}
+.list-users {
+  bottom: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  margin: 0px;
+}
+.title {
+  color: white;
+  font-size: 53px;
+  line-height: 53px;
+}
+.sub-title {
+  color: white;
+  font-size: 43px;
+  line-height: 43px;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+::ng-deep .mat-chip.mat-standard-chip {
+  background-color: #b98f31bd;
+  color: rgba(0,0,0,.87);
+}
+
+::ng-deep .mat-standard-chip {
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  padding: 7px 12px;
+  border-radius: 6px !important;
+  align-items: center;
+  cursor: default;
+  min-height: 32px;
+  height: 1px;
+}

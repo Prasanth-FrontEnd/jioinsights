@@ -1,0 +1,41 @@
+<div class="container" style="width: 100%;padding: 0px;">
+  <img src="/assets/images/entertainment6.jpg" alt="Snow" class="entertainment" style="width:100%;height: 83.3%;">
+  <div class="container centered">
+    <div class="list-users" *ngIf="isAuthenticated()">
+      <form class="example-form">
+        <mat-card style="width: 100%;">
+
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Choose</mat-label>
+            <mat-chip-list #chipList aria-label="User selection">
+              <mat-chip
+                *ngFor="let user of users"
+                [selectable]="selectable"
+                [removable]="removable"
+                (removed)="remove(user)">
+                {{ user }}
+              </mat-chip>
+              <input
+                placeholder="Type '@' to select a user..."
+                #userInput
+                [formControl]="userCtrl"
+                [matAutocomplete]="auto"
+                [matChipInputFor]="chipList"
+                [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                (matChipInputTokenEnd)="add($event)">
+            </mat-chip-list>
+            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+              <mat-option *ngFor="let user of filteredUsers | async" [value]="user">
+                {{ user.username }}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </mat-card>
+      </form>
+    </div>
+  </div>
+  <div class="centered-right">
+    <h2 class="title">Unlimited movies, TV shows and more.</h2>
+    <h4 class="sub-title">Watch Anytime and Anywhere.</h4>
+  </div>
+</div>
