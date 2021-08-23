@@ -1,5 +1,15 @@
 # Mediacompany
 
+Created 3 pages - Home page, About page and Gallery page.
+
+Gallery page - Only private users can access it. Implemented by using Auth-guard. If try to access from logged out state it will navigate to home page and prompt dialog to login into the application.
+
+Home page - Implemented textarea box for private users.
+
+About page - Displayed some static information about the application.
+
+Implemented the Login and Logout functionality as for application flow.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
 ## Development server
