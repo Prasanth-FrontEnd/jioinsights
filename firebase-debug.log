@@ -1,0 +1,573 @@
+[debug] [2021-08-23T13:50:25.657Z] ----------------------------------------------------------------------
+[debug] [2021-08-23T13:50:25.660Z] Command:       /usr/local/bin/firebase /home/indiumsoftware/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy --debug
+[debug] [2021-08-23T13:50:25.661Z] CLI Version:   9.10.0
+[debug] [2021-08-23T13:50:25.661Z] Platform:      linux
+[debug] [2021-08-23T13:50:25.661Z] Node Version:  v12.18.1
+[debug] [2021-08-23T13:50:25.662Z] Time:          Mon Aug 23 2021 19:20:25 GMT+0530 (India Standard Time)
+[debug] [2021-08-23T13:50:25.662Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-23T13:50:25.669Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-23T13:50:25.671Z] > authorizing via signed-in user (learningnextgen21@gmail.com)
+[debug] [2021-08-23T13:50:25.671Z] [iam] checking project jio-flix-mediacompany for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-08-23T13:50:25.674Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-23T13:50:25.675Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-23T13:50:33.442Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 23 Aug 2021 13:50:33 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T13:50:33.454Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/jio-flix-mediacompany:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-08-23T13:50:35.456Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 23 Aug 2021 13:50:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1322","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T13:50:35.462Z] > refreshing access token with scopes: []
+[debug] [2021-08-23T13:50:35.463Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-23T13:50:36.109Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Mon, 23 Aug 2021 13:50:35 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T13:50:36.124Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jio-flix-mediacompany [none]
+[debug] [2021-08-23T13:50:36.729Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jio-flix-mediacompany 200
+[debug] [2021-08-23T13:50:36.730Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jio-flix-mediacompany {"projectId":"jio-flix-mediacompany","projectNumber":"14051880675","displayName":"jio-flix-mediacompany","name":"projects/jio-flix-mediacompany","resources":{"hostingSite":"jio-flix-mediacompany"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'jio-flix-mediacompany'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-08-23T13:50:36.737Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-23T13:50:36.738Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-23T13:50:37.214Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 23 Aug 2021 13:50:37 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T13:50:37.228Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/jio-flix-mediacompany/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-08-23T13:50:39.614Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 23 Aug 2021 13:50:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[jio-flix-mediacompany]: beginning deploy... 
+[info] i  hosting[jio-flix-mediacompany]: found 40 files in dist 
+[debug] [2021-08-23T13:50:39.643Z] > refreshing access token with scopes: []
+[debug] [2021-08-23T13:50:39.644Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-23T13:50:39.646Z] [hosting] hash cache [ZGlzdA] stored for 40 files
+[debug] [2021-08-23T13:50:39.646Z] [hosting][hash queue][FINAL] {"max":4,"min":0,"avg":0,"active":0,"complete":40,"success":40,"errored":0,"retried":0,"total":40,"elapsed":8}
+[debug] [2021-08-23T13:50:40.170Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 23 Aug 2021 13:50:40 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T13:50:40.184Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/jio-flix-mediacompany/versions/bdc38230f72b9214:populateFiles [none]
+[debug] [2021-08-23T13:50:40.184Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/jio-flix-mediacompany/versions/bdc38230f72b9214:populateFiles {"files":{"/index.html":"2a7c6fd14c88c3452352dd14f2ab4ad4e28b8b951571933d0256e969e63f24d4","/mediacompany/3rdpartylicenses.txt":"dc70a14342b32ed081a4dbb50643d94676b4c54938c3716efee719b49146ca0c","/mediacompany/favicon.ico":"5ba04cf43d3c8c026bd5edd43046db96acb28b5686d99ea7d7e148feabfffc8f","/mediacompany/glyphicons-halflings-regular.060b2710bdbbe3dfe48b.svg":"d345959a9026302c6b334384c0be26833b47e69210a0d7b702a916733cba81f3","/mediacompany/glyphicons-halflings-regular.4692b9ec53fd5972caa2.ttf":"b2c9eb414ad0e9f3b46ccf9b1ca6ae0912b6e8ee75d1b81cebf21265fcfc6487","/mediacompany/glyphicons-halflings-regular.5be1347c682810f199c7.eot":"a4cb49ee9cfd245c45b704d6f1b04f0d7a924276ed4e2099664b737e5d78df30","/mediacompany/glyphicons-halflings-regular.82b1212e45a2bc35dd73.woff":"dd00f14e1eb1196b2d59e3e67cee55e2578bc3a03c1c5ef18e1427003d629bed","/mediacompany/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2":"e671660b60a1a7cf0cda2155eb74ab5a33c90a423142e8a1cbca286ca9babbf5","/mediacompany/index.html":"20b7e213371a82ecd843eb1f5611e28d715c4b7c3ab29e49392df182fad81029","/mediacompany/main.1b2b0e2e58b0386e3db9.js":"08298921e4900e1d692cb4de8cd605cd8d8a1b08e5933d58f2e6958f5f9301a9","/mediacompany/polyfills.79f59071bb4ef273341f.js":"87298d337fc5c883b372a23cb1a0507945d59fb1def86ca0c6cc902fb4ccb1f3","/mediacompany/runtime.41786b48ff95cb915a2c.js":"27b79a26ee29e5046438e83da9a2386d44bd3196218db491bc0b871b917cd7ab","/mediacompany/styles.6ebdf70a50e26847366e.css":"4dd03bb8499afec1bddf2edaeaca3b9c6ee923f86b652d64fa5aa38b7d83bb1e","/mediacompany/assets/images/100th.jpg":"97012859266e538d1feff92981b2ded69e3658eeaa91713123ac150e7726144d","/mediacompany/assets/images/369.jpg":"a34e59a47c52ad853ef3508a3d79c80cead50243eabbcbefe174a191e71bdcc4","/mediacompany/assets/images/breathe.jpg":"fe688e2d9343acf22b7c96bebe1b09cba3fbe7cab48b916bf670aeb4b135061e","/mediacompany/assets/images/castle.jpg":"7dcdea17cfdda117cc40d30b63a665db9a410cca2f9ada6f193c2afc9823c26c","/mediacompany/assets/images/castle1.jpg":"54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f","/mediacompany/assets/images/children.jpg":"76852c67f49b644776714797d907614c46844b5792034bdff2447f6992d42b87","/mediacompany/assets/images/download.png":"65e8350c775aa772adc43d2638c4702619186fd0a2edd2a2d7e05a0734b72fb6","/mediacompany/assets/images/elementary.jpg":"595ea8543a22ee48ecb46b13378d3ce4d669153198a95e64884696570f1492df","/mediacompany/assets/images/enjoying.jpg":"dc4d59a40eaa51603fe11dd68e9792af6b16d47a3c439d41c2b910dcdfffafd1","/mediacompany/assets/images/entertainment.jpg":"fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1","/mediacompany/assets/images/entertainment1.jpg":"7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d","/mediacompany/assets/images/entertainment3.jpg":"f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c","/mediacompany/assets/images/entertainment4.jpg":"99fb97339cc94a8cd100bcb7241d11301b55eb2a252294709f28818593ad36c2","/mediacompany/assets/images/entertainment5.jpg":"af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58","/mediacompany/assets/images/entertainment6.jpg":"250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0","/mediacompany/assets/images/entertainment7.jpg":"337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a","/mediacompany/assets/images/everywhere.jpeg":"11450894cfb789664686c929e2cd0def76c252f0dafd7ed7789bffce79d4dad0","/mediacompany/assets/images/friends.jpg":"50d670ae8fe3bdadb480ef2d94f3f03a5f2c9acde7a3ca2272af7696c7505236","/mediacompany/assets/images/gotham.jpg":"2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca","/mediacompany/assets/images/gotham1.jpg":"c4dd7f816eab82bc2d830d5c6c70a676094cb341c9afe74853f8bb516b10b660","/mediacompany/assets/images/heist.jpg":"b92f21f827f36f0ae24c6000411f65ecd721489be38c996ddd124d7056963e06","/mediacompany/assets/images/law.jpg":"b9471c2135d9839c2ec123e712f9bc6ffbc5c7ff1a3cda530c597b8169f3de17","/mediacompany/assets/images/laws2.jpg":"8a2d28248e535a039f85aa90116a928a14c5dcebb809a61dfe5809d565edaaa6","/mediacompany/assets/images/mentalist.jpg":"0f8c7fcca1bc816277d3f2da4118caa69fd4374eb745caa32fd97f1e234df77e","/mediacompany/assets/images/poi.jpg":"e834b5edebb29d6688561ac72fc2d1ba250d72b965ba2c29a27afc0794e61999","/mediacompany/assets/images/psycho.jpg":"7f2bda2ab7e27be32054f980dcf5b6536c76565ef1a4c5f2473ff181b98e8cf4","/mediacompany/assets/images/trance.jpeg":"9422ee5eabdf2e7548336bd61acc2b0cb41cabd768faa88b1579f841e6814dfe"}}
+[info] i  hosting: adding files to version [0/40] (0%) 
+[debug] [2021-08-23T13:50:42.375Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/jio-flix-mediacompany/versions/bdc38230f72b9214:populateFiles 200
+[debug] [2021-08-23T13:50:42.376Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/jio-flix-mediacompany/versions/bdc38230f72b9214:populateFiles {"uploadRequiredHashes":["af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58","2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca","250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0","54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f","7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d","fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1","08298921e4900e1d692cb4de8cd605cd8d8a1b08e5933d58f2e6958f5f9301a9","7f2bda2ab7e27be32054f980dcf5b6536c76565ef1a4c5f2473ff181b98e8cf4","337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a","a34e59a47c52ad853ef3508a3d79c80cead50243eabbcbefe174a191e71bdcc4","b9471c2135d9839c2ec123e712f9bc6ffbc5c7ff1a3cda530c597b8169f3de17","fe688e2d9343acf22b7c96bebe1b09cba3fbe7cab48b916bf670aeb4b135061e","f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files"}
+[debug] [2021-08-23T13:50:42.385Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [none]
+[debug] [2021-08-23T13:50:42.386Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [stream]
+[debug] [2021-08-23T13:50:42.388Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca [none]
+[debug] [2021-08-23T13:50:42.388Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca [stream]
+[debug] [2021-08-23T13:50:42.389Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [none]
+[debug] [2021-08-23T13:50:42.390Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [stream]
+[debug] [2021-08-23T13:50:42.391Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f [none]
+[debug] [2021-08-23T13:50:42.392Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f [stream]
+[debug] [2021-08-23T13:50:42.393Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [none]
+[debug] [2021-08-23T13:50:42.393Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [stream]
+[debug] [2021-08-23T13:50:42.398Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [none]
+[debug] [2021-08-23T13:50:42.399Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [stream]
+[debug] [2021-08-23T13:50:42.400Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/08298921e4900e1d692cb4de8cd605cd8d8a1b08e5933d58f2e6958f5f9301a9 [none]
+[debug] [2021-08-23T13:50:42.401Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/08298921e4900e1d692cb4de8cd605cd8d8a1b08e5933d58f2e6958f5f9301a9 [stream]
+[debug] [2021-08-23T13:50:42.402Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/7f2bda2ab7e27be32054f980dcf5b6536c76565ef1a4c5f2473ff181b98e8cf4 [none]
+[debug] [2021-08-23T13:50:42.403Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/7f2bda2ab7e27be32054f980dcf5b6536c76565ef1a4c5f2473ff181b98e8cf4 [stream]
+[debug] [2021-08-23T13:50:42.404Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [none]
+[debug] [2021-08-23T13:50:42.405Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [stream]
+[debug] [2021-08-23T13:50:42.407Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/a34e59a47c52ad853ef3508a3d79c80cead50243eabbcbefe174a191e71bdcc4 [none]
+[debug] [2021-08-23T13:50:42.407Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/a34e59a47c52ad853ef3508a3d79c80cead50243eabbcbefe174a191e71bdcc4 [stream]
+[debug] [2021-08-23T13:50:42.409Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/b9471c2135d9839c2ec123e712f9bc6ffbc5c7ff1a3cda530c597b8169f3de17 [none]
+[debug] [2021-08-23T13:50:42.409Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/b9471c2135d9839c2ec123e712f9bc6ffbc5c7ff1a3cda530c597b8169f3de17 [stream]
+[debug] [2021-08-23T13:50:42.411Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fe688e2d9343acf22b7c96bebe1b09cba3fbe7cab48b916bf670aeb4b135061e [none]
+[debug] [2021-08-23T13:50:42.412Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fe688e2d9343acf22b7c96bebe1b09cba3fbe7cab48b916bf670aeb4b135061e [stream]
+[debug] [2021-08-23T13:50:42.413Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [none]
+[debug] [2021-08-23T13:50:42.414Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [stream]
+[debug] [2021-08-23T13:50:42.416Z] [hosting][populate queue][FINAL] {"max":2742,"min":2742,"avg":2742,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2773}
+[debug] [2021-08-23T13:50:42.416Z] [hosting] uploads queued: 13
+[info] i  hosting: uploading new files [0/13] (0%) 
+[info] i  hosting: uploading new files [0/13] (0%) 
+[info] i  hosting: uploading new files [0/13] (0%) 
+[info] i  hosting: uploading new files [0/13] (0%) 
+[info] i  hosting: uploading new files [0/13] (0%) 
+[info] i  hosting: uploading new files [0/13] (0%) 
+[info] i  hosting: uploading new files [0/13] (0%) 
+[debug] [2021-08-23T13:50:56.814Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/08298921e4900e1d692cb4de8cd605cd8d8a1b08e5933d58f2e6958f5f9301a9 200
+[debug] [2021-08-23T13:50:56.815Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/08298921e4900e1d692cb4de8cd605cd8d8a1b08e5933d58f2e6958f5f9301a9 [stream]
+[info] i  hosting: uploading new files [1/13] (7%) 
+[debug] [2021-08-23T13:50:58.238Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fe688e2d9343acf22b7c96bebe1b09cba3fbe7cab48b916bf670aeb4b135061e 200
+[debug] [2021-08-23T13:50:58.238Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fe688e2d9343acf22b7c96bebe1b09cba3fbe7cab48b916bf670aeb4b135061e [stream]
+[debug] [2021-08-23T13:50:58.543Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/7f2bda2ab7e27be32054f980dcf5b6536c76565ef1a4c5f2473ff181b98e8cf4 200
+[debug] [2021-08-23T13:50:58.544Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/7f2bda2ab7e27be32054f980dcf5b6536c76565ef1a4c5f2473ff181b98e8cf4 [stream]
+[info] i  hosting: uploading new files [3/13] (23%) 
+[info] i  hosting: uploading new files [3/13] (23%) 
+[debug] [2021-08-23T13:51:01.743Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/a34e59a47c52ad853ef3508a3d79c80cead50243eabbcbefe174a191e71bdcc4 200
+[debug] [2021-08-23T13:51:01.743Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/a34e59a47c52ad853ef3508a3d79c80cead50243eabbcbefe174a191e71bdcc4 [stream]
+[info] i  hosting: uploading new files [4/13] (30%) 
+[info] i  hosting: uploading new files [4/13] (30%) 
+[debug] [2021-08-23T13:51:06.465Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/b9471c2135d9839c2ec123e712f9bc6ffbc5c7ff1a3cda530c597b8169f3de17 200
+[debug] [2021-08-23T13:51:06.465Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/b9471c2135d9839c2ec123e712f9bc6ffbc5c7ff1a3cda530c597b8169f3de17 [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:51:12.787Z] [uploadQueue] Retrying task 2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca
+[debug] [2021-08-23T13:51:12.789Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca [none]
+[debug] [2021-08-23T13:51:12.790Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca [stream]
+[debug] [2021-08-23T13:51:12.794Z] [uploadQueue] Retrying task 250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0
+[debug] [2021-08-23T13:51:12.795Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [none]
+[debug] [2021-08-23T13:51:12.796Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [stream]
+[debug] [2021-08-23T13:51:12.798Z] [uploadQueue] Retrying task 54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f
+[debug] [2021-08-23T13:51:12.799Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f [none]
+[debug] [2021-08-23T13:51:12.799Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f [stream]
+[debug] [2021-08-23T13:51:12.801Z] [uploadQueue] Retrying task fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1
+[debug] [2021-08-23T13:51:12.801Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [none]
+[debug] [2021-08-23T13:51:12.802Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:51:18.627Z] [uploadQueue] Retrying task f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c
+[debug] [2021-08-23T13:51:18.629Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [none]
+[debug] [2021-08-23T13:51:18.629Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:51:20.706Z] [uploadQueue] Retrying task 337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a
+[debug] [2021-08-23T13:51:20.707Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [none]
+[debug] [2021-08-23T13:51:20.708Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:51:42.560Z] [uploadQueue] Retrying task af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58
+[debug] [2021-08-23T13:51:42.562Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [none]
+[debug] [2021-08-23T13:51:42.563Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [stream]
+[debug] [2021-08-23T13:51:43.589Z] [uploadQueue] Retrying task 2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca
+[debug] [2021-08-23T13:51:43.590Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca [none]
+[debug] [2021-08-23T13:51:43.590Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca [stream]
+[debug] [2021-08-23T13:51:43.595Z] [uploadQueue] Retrying task 250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0
+[debug] [2021-08-23T13:51:43.596Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [none]
+[debug] [2021-08-23T13:51:43.596Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [stream]
+[debug] [2021-08-23T13:51:43.600Z] [uploadQueue] Retrying task 54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f
+[debug] [2021-08-23T13:51:43.601Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f [none]
+[debug] [2021-08-23T13:51:43.601Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f [stream]
+[debug] [2021-08-23T13:51:43.603Z] [uploadQueue] Retrying task fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1
+[debug] [2021-08-23T13:51:43.604Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [none]
+[debug] [2021-08-23T13:51:43.605Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:51:48.804Z] [uploadQueue] Retrying task 7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d
+[debug] [2021-08-23T13:51:48.805Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [none]
+[debug] [2021-08-23T13:51:48.806Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:51:55.270Z] [uploadQueue] Retrying task f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c
+[debug] [2021-08-23T13:51:55.272Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [none]
+[debug] [2021-08-23T13:51:55.272Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:51:59.429Z] [uploadQueue] Retrying task 337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a
+[debug] [2021-08-23T13:51:59.431Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [none]
+[debug] [2021-08-23T13:51:59.431Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:52:15.194Z] [uploadQueue] Retrying task 2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca
+[debug] [2021-08-23T13:52:15.196Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca [none]
+[debug] [2021-08-23T13:52:15.196Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca [stream]
+[debug] [2021-08-23T13:52:15.202Z] [uploadQueue] Retrying task 250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0
+[debug] [2021-08-23T13:52:15.203Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [none]
+[debug] [2021-08-23T13:52:15.204Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [stream]
+[debug] [2021-08-23T13:52:15.206Z] [uploadQueue] Retrying task 54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f
+[debug] [2021-08-23T13:52:15.207Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f [none]
+[debug] [2021-08-23T13:52:15.207Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f [stream]
+[debug] [2021-08-23T13:52:15.208Z] [uploadQueue] Retrying task fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1
+[debug] [2021-08-23T13:52:15.210Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [none]
+[debug] [2021-08-23T13:52:15.211Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:52:32.711Z] [uploadQueue] Retrying task f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c
+[debug] [2021-08-23T13:52:32.712Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [none]
+[debug] [2021-08-23T13:52:32.713Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:52:38.951Z] [uploadQueue] Retrying task 337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a
+[debug] [2021-08-23T13:52:38.953Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [none]
+[debug] [2021-08-23T13:52:38.954Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:52:43.143Z] [uploadQueue] Retrying task af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58
+[debug] [2021-08-23T13:52:43.144Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [none]
+[debug] [2021-08-23T13:52:43.145Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:52:48.397Z] [uploadQueue] Retrying task 2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca
+[debug] [2021-08-23T13:52:48.398Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca [none]
+[debug] [2021-08-23T13:52:48.399Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca [stream]
+[debug] [2021-08-23T13:52:48.404Z] [uploadQueue] Retrying task 250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0
+[debug] [2021-08-23T13:52:48.405Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [none]
+[debug] [2021-08-23T13:52:48.405Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [stream]
+[debug] [2021-08-23T13:52:48.408Z] [uploadQueue] Retrying task 54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f
+[debug] [2021-08-23T13:52:48.409Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f [none]
+[debug] [2021-08-23T13:52:48.409Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f [stream]
+[debug] [2021-08-23T13:52:48.412Z] [uploadQueue] Retrying task fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1
+[debug] [2021-08-23T13:52:48.412Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [none]
+[debug] [2021-08-23T13:52:48.412Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:52:55.627Z] [uploadQueue] Retrying task 7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d
+[debug] [2021-08-23T13:52:55.628Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [none]
+[debug] [2021-08-23T13:52:55.629Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:53:11.754Z] [uploadQueue] Retrying task f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c
+[debug] [2021-08-23T13:53:11.755Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [none]
+[debug] [2021-08-23T13:53:11.756Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:53:20.074Z] [uploadQueue] Retrying task 337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a
+[debug] [2021-08-23T13:53:20.076Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [none]
+[debug] [2021-08-23T13:53:20.076Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:53:24.800Z] [uploadQueue] Retrying task 2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca
+[debug] [2021-08-23T13:53:24.801Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca [none]
+[debug] [2021-08-23T13:53:24.801Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca [stream]
+[debug] [2021-08-23T13:53:24.806Z] [uploadQueue] Retrying task 250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0
+[debug] [2021-08-23T13:53:24.806Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [none]
+[debug] [2021-08-23T13:53:24.806Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [stream]
+[debug] [2021-08-23T13:53:24.810Z] [uploadQueue] Retrying task 54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f
+[debug] [2021-08-23T13:53:24.811Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f [none]
+[debug] [2021-08-23T13:53:24.811Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f [stream]
+[debug] [2021-08-23T13:53:24.816Z] [uploadQueue] Retrying task fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1
+[debug] [2021-08-23T13:53:24.816Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [none]
+[debug] [2021-08-23T13:53:24.816Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:53:44.526Z] [uploadQueue] Retrying task af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58
+[debug] [2021-08-23T13:53:44.530Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [none]
+[debug] [2021-08-23T13:53:44.530Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [stream]
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[info] i  hosting: uploading new files [5/13] (38%) 
+[debug] [2021-08-23T13:53:53.252Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f 200
+[debug] [2021-08-23T13:53:53.253Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f [stream]
+[info] i  hosting: uploading new files [6/13] (46%) 
+[debug] [2021-08-23T13:53:53.995Z] [uploadQueue] Retrying task f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c
+[debug] [2021-08-23T13:53:53.996Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [none]
+[debug] [2021-08-23T13:53:53.996Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [stream]
+[debug] Task 2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca failed: retries exhausted after 6 attempts
+[debug] [2021-08-23T13:53:54.803Z] [hosting][upload queue][FINAL] {"max":28443,"min":14432,"avg":19722.333333333332,"active":6,"complete":7,"success":6,"errored":1,"retried":34,"total":13,"elapsed":192426}
+[debug] Task 250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 failed: retries exhausted after 6 attempts
+[debug] Task fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 failed: retries exhausted after 6 attempts
+[debug] [2021-08-23T13:54:00.067Z] FirebaseError: Timeout reached making request to https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/bdc38230f72b9214/files/2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca
+    at Client.doRequest (/home/indiumsoftware/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:209:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: Task 2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca failed: retries exhausted after 6 attempts
+[debug] [2021-08-23T13:56:54.470Z] ----------------------------------------------------------------------
+[debug] [2021-08-23T13:56:54.472Z] Command:       /usr/local/bin/firebase /home/indiumsoftware/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy --debug
+[debug] [2021-08-23T13:56:54.472Z] CLI Version:   9.10.0
+[debug] [2021-08-23T13:56:54.472Z] Platform:      linux
+[debug] [2021-08-23T13:56:54.472Z] Node Version:  v12.18.1
+[debug] [2021-08-23T13:56:54.473Z] Time:          Mon Aug 23 2021 19:26:54 GMT+0530 (India Standard Time)
+[debug] [2021-08-23T13:56:54.473Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-23T13:56:54.479Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-23T13:56:54.480Z] > authorizing via signed-in user (learningnextgen21@gmail.com)
+[debug] [2021-08-23T13:56:54.481Z] [iam] checking project jio-flix-mediacompany for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-08-23T13:56:54.484Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-23T13:56:54.485Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-23T13:56:55.293Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 23 Aug 2021 13:56:55 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T13:56:55.305Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/jio-flix-mediacompany:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-08-23T13:56:57.165Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 23 Aug 2021 13:56:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1323","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T13:56:57.171Z] > refreshing access token with scopes: []
+[debug] [2021-08-23T13:56:57.172Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-23T13:56:57.594Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Mon, 23 Aug 2021 13:56:57 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T13:56:57.607Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jio-flix-mediacompany [none]
+[debug] [2021-08-23T13:56:58.290Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jio-flix-mediacompany 200
+[debug] [2021-08-23T13:56:58.290Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jio-flix-mediacompany {"projectId":"jio-flix-mediacompany","projectNumber":"14051880675","displayName":"jio-flix-mediacompany","name":"projects/jio-flix-mediacompany","resources":{"hostingSite":"jio-flix-mediacompany"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'jio-flix-mediacompany'...
+[info] 
+[info] i  deploying hosting 
+[error] 
+[error] Error: Specified public directory 'public' does not exist, can't deploy hosting to site jio-flix-mediacompany
+[debug] [2021-08-23T13:58:14.480Z] ----------------------------------------------------------------------
+[debug] [2021-08-23T13:58:14.483Z] Command:       /usr/local/bin/firebase /home/indiumsoftware/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy --debug
+[debug] [2021-08-23T13:58:14.483Z] CLI Version:   9.10.0
+[debug] [2021-08-23T13:58:14.484Z] Platform:      linux
+[debug] [2021-08-23T13:58:14.484Z] Node Version:  v12.18.1
+[debug] [2021-08-23T13:58:14.484Z] Time:          Mon Aug 23 2021 19:28:14 GMT+0530 (India Standard Time)
+[debug] [2021-08-23T13:58:14.485Z] ----------------------------------------------------------------------
+[debug] 
+[error] 
+[error] Error: Not in a Firebase app directory (could not locate firebase.json)
+[debug] [2021-08-23T13:59:11.817Z] ----------------------------------------------------------------------
+[debug] [2021-08-23T13:59:11.820Z] Command:       /usr/local/bin/firebase /home/indiumsoftware/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy --debug
+[debug] [2021-08-23T13:59:11.820Z] CLI Version:   9.10.0
+[debug] [2021-08-23T13:59:11.820Z] Platform:      linux
+[debug] [2021-08-23T13:59:11.820Z] Node Version:  v12.18.1
+[debug] [2021-08-23T13:59:11.820Z] Time:          Mon Aug 23 2021 19:29:11 GMT+0530 (India Standard Time)
+[debug] [2021-08-23T13:59:11.821Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-23T13:59:11.827Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-23T13:59:11.828Z] > authorizing via signed-in user (learningnextgen21@gmail.com)
+[debug] [2021-08-23T13:59:11.829Z] [iam] checking project jio-flix-mediacompany for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-08-23T13:59:11.832Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-23T13:59:11.833Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-23T13:59:12.329Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Mon, 23 Aug 2021 13:59:12 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T13:59:12.402Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/jio-flix-mediacompany:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-08-23T13:59:13.100Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 23 Aug 2021 13:59:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=244","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T13:59:13.103Z] > refreshing access token with scopes: []
+[debug] [2021-08-23T13:59:13.104Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-23T13:59:13.862Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 23 Aug 2021 13:59:13 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T13:59:13.891Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jio-flix-mediacompany [none]
+[debug] [2021-08-23T13:59:14.494Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jio-flix-mediacompany 200
+[debug] [2021-08-23T13:59:14.495Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jio-flix-mediacompany {"projectId":"jio-flix-mediacompany","projectNumber":"14051880675","displayName":"jio-flix-mediacompany","name":"projects/jio-flix-mediacompany","resources":{"hostingSite":"jio-flix-mediacompany"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'jio-flix-mediacompany'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-08-23T13:59:14.499Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-23T13:59:14.500Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-23T13:59:15.152Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Mon, 23 Aug 2021 13:59:15 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T13:59:15.165Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/jio-flix-mediacompany/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-08-23T13:59:17.710Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 23 Aug 2021 13:59:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[jio-flix-mediacompany]: beginning deploy... 
+[info] i  hosting[jio-flix-mediacompany]: found 40 files in dist 
+[debug] [2021-08-23T13:59:17.745Z] > refreshing access token with scopes: []
+[debug] [2021-08-23T13:59:17.745Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-23T13:59:17.747Z] [hosting] hash cache [ZGlzdA] stored for 40 files
+[debug] [2021-08-23T13:59:17.747Z] [hosting][hash queue][FINAL] {"max":2,"min":0,"avg":0,"active":0,"complete":40,"success":40,"errored":0,"retried":0,"total":40,"elapsed":5}
+[debug] [2021-08-23T13:59:18.179Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 23 Aug 2021 13:59:18 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T13:59:18.193Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb:populateFiles [none]
+[debug] [2021-08-23T13:59:18.193Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb:populateFiles {"files":{"/index.html":"2a7c6fd14c88c3452352dd14f2ab4ad4e28b8b951571933d0256e969e63f24d4","/mediacompany/3rdpartylicenses.txt":"dc70a14342b32ed081a4dbb50643d94676b4c54938c3716efee719b49146ca0c","/mediacompany/favicon.ico":"5ba04cf43d3c8c026bd5edd43046db96acb28b5686d99ea7d7e148feabfffc8f","/mediacompany/glyphicons-halflings-regular.060b2710bdbbe3dfe48b.svg":"d345959a9026302c6b334384c0be26833b47e69210a0d7b702a916733cba81f3","/mediacompany/glyphicons-halflings-regular.4692b9ec53fd5972caa2.ttf":"b2c9eb414ad0e9f3b46ccf9b1ca6ae0912b6e8ee75d1b81cebf21265fcfc6487","/mediacompany/glyphicons-halflings-regular.5be1347c682810f199c7.eot":"a4cb49ee9cfd245c45b704d6f1b04f0d7a924276ed4e2099664b737e5d78df30","/mediacompany/glyphicons-halflings-regular.82b1212e45a2bc35dd73.woff":"dd00f14e1eb1196b2d59e3e67cee55e2578bc3a03c1c5ef18e1427003d629bed","/mediacompany/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2":"e671660b60a1a7cf0cda2155eb74ab5a33c90a423142e8a1cbca286ca9babbf5","/mediacompany/index.html":"20b7e213371a82ecd843eb1f5611e28d715c4b7c3ab29e49392df182fad81029","/mediacompany/main.1b2b0e2e58b0386e3db9.js":"08298921e4900e1d692cb4de8cd605cd8d8a1b08e5933d58f2e6958f5f9301a9","/mediacompany/polyfills.79f59071bb4ef273341f.js":"87298d337fc5c883b372a23cb1a0507945d59fb1def86ca0c6cc902fb4ccb1f3","/mediacompany/runtime.41786b48ff95cb915a2c.js":"27b79a26ee29e5046438e83da9a2386d44bd3196218db491bc0b871b917cd7ab","/mediacompany/styles.6ebdf70a50e26847366e.css":"4dd03bb8499afec1bddf2edaeaca3b9c6ee923f86b652d64fa5aa38b7d83bb1e","/mediacompany/assets/images/100th.jpg":"97012859266e538d1feff92981b2ded69e3658eeaa91713123ac150e7726144d","/mediacompany/assets/images/369.jpg":"a34e59a47c52ad853ef3508a3d79c80cead50243eabbcbefe174a191e71bdcc4","/mediacompany/assets/images/breathe.jpg":"fe688e2d9343acf22b7c96bebe1b09cba3fbe7cab48b916bf670aeb4b135061e","/mediacompany/assets/images/castle.jpg":"7dcdea17cfdda117cc40d30b63a665db9a410cca2f9ada6f193c2afc9823c26c","/mediacompany/assets/images/castle1.jpg":"54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f","/mediacompany/assets/images/children.jpg":"76852c67f49b644776714797d907614c46844b5792034bdff2447f6992d42b87","/mediacompany/assets/images/download.png":"65e8350c775aa772adc43d2638c4702619186fd0a2edd2a2d7e05a0734b72fb6","/mediacompany/assets/images/elementary.jpg":"595ea8543a22ee48ecb46b13378d3ce4d669153198a95e64884696570f1492df","/mediacompany/assets/images/enjoying.jpg":"dc4d59a40eaa51603fe11dd68e9792af6b16d47a3c439d41c2b910dcdfffafd1","/mediacompany/assets/images/entertainment.jpg":"fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1","/mediacompany/assets/images/entertainment1.jpg":"7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d","/mediacompany/assets/images/entertainment3.jpg":"f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c","/mediacompany/assets/images/entertainment4.jpg":"99fb97339cc94a8cd100bcb7241d11301b55eb2a252294709f28818593ad36c2","/mediacompany/assets/images/entertainment5.jpg":"af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58","/mediacompany/assets/images/entertainment6.jpg":"250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0","/mediacompany/assets/images/entertainment7.jpg":"337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a","/mediacompany/assets/images/everywhere.jpeg":"11450894cfb789664686c929e2cd0def76c252f0dafd7ed7789bffce79d4dad0","/mediacompany/assets/images/friends.jpg":"50d670ae8fe3bdadb480ef2d94f3f03a5f2c9acde7a3ca2272af7696c7505236","/mediacompany/assets/images/gotham.jpg":"2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca","/mediacompany/assets/images/gotham1.jpg":"c4dd7f816eab82bc2d830d5c6c70a676094cb341c9afe74853f8bb516b10b660","/mediacompany/assets/images/heist.jpg":"b92f21f827f36f0ae24c6000411f65ecd721489be38c996ddd124d7056963e06","/mediacompany/assets/images/law.jpg":"b9471c2135d9839c2ec123e712f9bc6ffbc5c7ff1a3cda530c597b8169f3de17","/mediacompany/assets/images/laws2.jpg":"8a2d28248e535a039f85aa90116a928a14c5dcebb809a61dfe5809d565edaaa6","/mediacompany/assets/images/mentalist.jpg":"0f8c7fcca1bc816277d3f2da4118caa69fd4374eb745caa32fd97f1e234df77e","/mediacompany/assets/images/poi.jpg":"e834b5edebb29d6688561ac72fc2d1ba250d72b965ba2c29a27afc0794e61999","/mediacompany/assets/images/psycho.jpg":"7f2bda2ab7e27be32054f980dcf5b6536c76565ef1a4c5f2473ff181b98e8cf4","/mediacompany/assets/images/trance.jpeg":"9422ee5eabdf2e7548336bd61acc2b0cb41cabd768faa88b1579f841e6814dfe"}}
+[info] i  hosting: adding files to version [0/40] (0%) 
+[debug] [2021-08-23T13:59:20.582Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb:populateFiles 200
+[debug] [2021-08-23T13:59:20.582Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb:populateFiles {"uploadRequiredHashes":["af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58","f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c","337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a","250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0","7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d","fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files"}
+[debug] [2021-08-23T13:59:20.591Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [none]
+[debug] [2021-08-23T13:59:20.591Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [stream]
+[debug] [2021-08-23T13:59:20.594Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [none]
+[debug] [2021-08-23T13:59:20.594Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [stream]
+[debug] [2021-08-23T13:59:20.596Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [none]
+[debug] [2021-08-23T13:59:20.597Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [stream]
+[debug] [2021-08-23T13:59:20.598Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [none]
+[debug] [2021-08-23T13:59:20.599Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [stream]
+[debug] [2021-08-23T13:59:20.600Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [none]
+[debug] [2021-08-23T13:59:20.600Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [stream]
+[debug] [2021-08-23T13:59:20.602Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [none]
+[debug] [2021-08-23T13:59:20.602Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [stream]
+[debug] [2021-08-23T13:59:20.604Z] [hosting][populate queue][FINAL] {"max":2847,"min":2847,"avg":2847,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2860}
+[debug] [2021-08-23T13:59:20.605Z] [hosting] uploads queued: 6
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[debug] [2021-08-23T13:59:50.993Z] [uploadQueue] Retrying task 250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0
+[debug] [2021-08-23T13:59:50.994Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [none]
+[debug] [2021-08-23T13:59:50.995Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [stream]
+[debug] [2021-08-23T13:59:50.997Z] [uploadQueue] Retrying task fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1
+[debug] [2021-08-23T13:59:50.998Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [none]
+[debug] [2021-08-23T13:59:50.999Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [stream]
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[debug] [2021-08-23T13:59:56.828Z] [uploadQueue] Retrying task f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c
+[debug] [2021-08-23T13:59:56.837Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [none]
+[debug] [2021-08-23T13:59:56.839Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [stream]
+[info] i  hosting: uploading new files [0/6] (0%) 
+[debug] [2021-08-23T13:59:58.910Z] [uploadQueue] Retrying task 337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a
+[debug] [2021-08-23T13:59:58.912Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [none]
+[debug] [2021-08-23T13:59:58.912Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [stream]
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[debug] [2021-08-23T14:00:20.765Z] [uploadQueue] Retrying task af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58
+[debug] [2021-08-23T14:00:20.767Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [none]
+[debug] [2021-08-23T14:00:20.768Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [stream]
+[info] i  hosting: uploading new files [0/6] (0%) 
+[debug] [2021-08-23T14:00:21.795Z] [uploadQueue] Retrying task 250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0
+[debug] [2021-08-23T14:00:21.796Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [none]
+[debug] [2021-08-23T14:00:21.796Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [stream]
+[debug] [2021-08-23T14:00:21.799Z] [uploadQueue] Retrying task fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1
+[debug] [2021-08-23T14:00:21.800Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [none]
+[debug] [2021-08-23T14:00:21.800Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1 [stream]
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[debug] [2021-08-23T14:00:27.011Z] [uploadQueue] Retrying task 7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d
+[debug] [2021-08-23T14:00:27.016Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [none]
+[debug] [2021-08-23T14:00:27.016Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/4fa66738a8d3a4bb/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [stream]
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[info] i  hosting: uploading new files [0/6] (0%) 
+[debug] [2021-08-23T14:01:53.191Z] ----------------------------------------------------------------------
+[debug] [2021-08-23T14:01:53.193Z] Command:       /usr/local/bin/firebase /home/indiumsoftware/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2021-08-23T14:01:53.193Z] CLI Version:   9.10.0
+[debug] [2021-08-23T14:01:53.194Z] Platform:      linux
+[debug] [2021-08-23T14:01:53.194Z] Node Version:  v12.18.1
+[debug] [2021-08-23T14:01:53.194Z] Time:          Mon Aug 23 2021 19:31:53 GMT+0530 (India Standard Time)
+[debug] [2021-08-23T14:01:53.194Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-23T14:01:53.201Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-23T14:01:53.201Z] > authorizing via signed-in user (learningnextgen21@gmail.com)
+[debug] [2021-08-23T14:01:53.202Z] [iam] checking project jio-flix-mediacompany for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-08-23T14:01:53.205Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-23T14:01:53.205Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-23T14:01:53.730Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 23 Aug 2021 14:01:53 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T14:01:53.745Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/jio-flix-mediacompany:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-08-23T14:01:55.410Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 23 Aug 2021 14:01:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1200","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T14:01:55.413Z] > refreshing access token with scopes: []
+[debug] [2021-08-23T14:01:55.414Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-23T14:01:55.859Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 23 Aug 2021 14:01:55 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T14:01:55.873Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/jio-flix-mediacompany [none]
+[debug] [2021-08-23T14:01:56.752Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/jio-flix-mediacompany 200
+[debug] [2021-08-23T14:01:56.753Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/jio-flix-mediacompany {"projectId":"jio-flix-mediacompany","projectNumber":"14051880675","displayName":"jio-flix-mediacompany","name":"projects/jio-flix-mediacompany","resources":{"hostingSite":"jio-flix-mediacompany"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'jio-flix-mediacompany'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-08-23T14:01:56.759Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-23T14:01:56.759Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-23T14:01:57.426Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 23 Aug 2021 14:01:57 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T14:01:57.440Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/jio-flix-mediacompany/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-08-23T14:01:59.567Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 23 Aug 2021 14:01:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[jio-flix-mediacompany]: beginning deploy... 
+[info] i  hosting[jio-flix-mediacompany]: found 40 files in dist 
+[debug] [2021-08-23T14:01:59.596Z] [hosting] hash cache [ZGlzdA] not populated
+[debug] [2021-08-23T14:02:00.095Z] > refreshing access token with scopes: []
+[debug] [2021-08-23T14:02:00.096Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-23T14:02:00.100Z] [hosting] hash cache [ZGlzdA] stored for 40 files
+[debug] [2021-08-23T14:02:00.101Z] [hosting][hash queue][FINAL] {"max":490,"min":33,"avg":119.075,"active":0,"complete":40,"success":40,"errored":0,"retried":0,"total":40,"elapsed":504}
+[debug] [2021-08-23T14:02:00.634Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 23 Aug 2021 14:02:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-23T14:02:00.648Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/jio-flix-mediacompany/versions/73277e88b506dd67:populateFiles [none]
+[debug] [2021-08-23T14:02:00.648Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/jio-flix-mediacompany/versions/73277e88b506dd67:populateFiles {"files":{"/index.html":"2a7c6fd14c88c3452352dd14f2ab4ad4e28b8b951571933d0256e969e63f24d4","/mediacompany/3rdpartylicenses.txt":"dc70a14342b32ed081a4dbb50643d94676b4c54938c3716efee719b49146ca0c","/mediacompany/index.html":"20b7e213371a82ecd843eb1f5611e28d715c4b7c3ab29e49392df182fad81029","/mediacompany/polyfills.79f59071bb4ef273341f.js":"87298d337fc5c883b372a23cb1a0507945d59fb1def86ca0c6cc902fb4ccb1f3","/mediacompany/runtime.41786b48ff95cb915a2c.js":"27b79a26ee29e5046438e83da9a2386d44bd3196218db491bc0b871b917cd7ab","/mediacompany/favicon.ico":"5ba04cf43d3c8c026bd5edd43046db96acb28b5686d99ea7d7e148feabfffc8f","/mediacompany/glyphicons-halflings-regular.5be1347c682810f199c7.eot":"a4cb49ee9cfd245c45b704d6f1b04f0d7a924276ed4e2099664b737e5d78df30","/mediacompany/glyphicons-halflings-regular.be810be3a3e14c682a25.woff2":"e671660b60a1a7cf0cda2155eb74ab5a33c90a423142e8a1cbca286ca9babbf5","/mediacompany/glyphicons-halflings-regular.82b1212e45a2bc35dd73.woff":"dd00f14e1eb1196b2d59e3e67cee55e2578bc3a03c1c5ef18e1427003d629bed","/mediacompany/glyphicons-halflings-regular.4692b9ec53fd5972caa2.ttf":"b2c9eb414ad0e9f3b46ccf9b1ca6ae0912b6e8ee75d1b81cebf21265fcfc6487","/mediacompany/assets/images/download.png":"65e8350c775aa772adc43d2638c4702619186fd0a2edd2a2d7e05a0734b72fb6","/mediacompany/assets/images/laws2.jpg":"8a2d28248e535a039f85aa90116a928a14c5dcebb809a61dfe5809d565edaaa6","/mediacompany/assets/images/children.jpg":"76852c67f49b644776714797d907614c46844b5792034bdff2447f6992d42b87","/mediacompany/assets/images/enjoying.jpg":"dc4d59a40eaa51603fe11dd68e9792af6b16d47a3c439d41c2b910dcdfffafd1","/mediacompany/glyphicons-halflings-regular.060b2710bdbbe3dfe48b.svg":"d345959a9026302c6b334384c0be26833b47e69210a0d7b702a916733cba81f3","/mediacompany/assets/images/entertainment4.jpg":"99fb97339cc94a8cd100bcb7241d11301b55eb2a252294709f28818593ad36c2","/mediacompany/assets/images/everywhere.jpeg":"11450894cfb789664686c929e2cd0def76c252f0dafd7ed7789bffce79d4dad0","/mediacompany/assets/images/heist.jpg":"b92f21f827f36f0ae24c6000411f65ecd721489be38c996ddd124d7056963e06","/mediacompany/assets/images/100th.jpg":"97012859266e538d1feff92981b2ded69e3658eeaa91713123ac150e7726144d","/mediacompany/styles.6ebdf70a50e26847366e.css":"4dd03bb8499afec1bddf2edaeaca3b9c6ee923f86b652d64fa5aa38b7d83bb1e","/mediacompany/assets/images/mentalist.jpg":"0f8c7fcca1bc816277d3f2da4118caa69fd4374eb745caa32fd97f1e234df77e","/mediacompany/assets/images/gotham1.jpg":"c4dd7f816eab82bc2d830d5c6c70a676094cb341c9afe74853f8bb516b10b660","/mediacompany/assets/images/friends.jpg":"50d670ae8fe3bdadb480ef2d94f3f03a5f2c9acde7a3ca2272af7696c7505236","/mediacompany/assets/images/trance.jpeg":"9422ee5eabdf2e7548336bd61acc2b0cb41cabd768faa88b1579f841e6814dfe","/mediacompany/assets/images/castle.jpg":"7dcdea17cfdda117cc40d30b63a665db9a410cca2f9ada6f193c2afc9823c26c","/mediacompany/assets/images/breathe.jpg":"fe688e2d9343acf22b7c96bebe1b09cba3fbe7cab48b916bf670aeb4b135061e","/mediacompany/assets/images/elementary.jpg":"595ea8543a22ee48ecb46b13378d3ce4d669153198a95e64884696570f1492df","/mediacompany/assets/images/369.jpg":"a34e59a47c52ad853ef3508a3d79c80cead50243eabbcbefe174a191e71bdcc4","/mediacompany/assets/images/psycho.jpg":"7f2bda2ab7e27be32054f980dcf5b6536c76565ef1a4c5f2473ff181b98e8cf4","/mediacompany/assets/images/poi.jpg":"e834b5edebb29d6688561ac72fc2d1ba250d72b965ba2c29a27afc0794e61999","/mediacompany/assets/images/law.jpg":"b9471c2135d9839c2ec123e712f9bc6ffbc5c7ff1a3cda530c597b8169f3de17","/mediacompany/main.1b2b0e2e58b0386e3db9.js":"08298921e4900e1d692cb4de8cd605cd8d8a1b08e5933d58f2e6958f5f9301a9","/mediacompany/assets/images/gotham.jpg":"2c99e4f48be5916d83a794af03ddb30d8e7981a770e009599fcceb4de0c350ca","/mediacompany/assets/images/castle1.jpg":"54608c65775fae6b29647835d8fd281f0aa7ebb980d7b360a2df47135afd8b9f","/mediacompany/assets/images/entertainment.jpg":"fa039dc59e222974d45b5c593b05b878f5d7ec2c11927745d292516ba4a940d1","/mediacompany/assets/images/entertainment6.jpg":"250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0","/mediacompany/assets/images/entertainment3.jpg":"f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c","/mediacompany/assets/images/entertainment7.jpg":"337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a","/mediacompany/assets/images/entertainment5.jpg":"af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58","/mediacompany/assets/images/entertainment1.jpg":"7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d"}}
+[debug] [2021-08-23T14:02:03.093Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/jio-flix-mediacompany/versions/73277e88b506dd67:populateFiles 200
+[debug] [2021-08-23T14:02:03.093Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/jio-flix-mediacompany/versions/73277e88b506dd67:populateFiles {"uploadRequiredHashes":["af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58","337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a","250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0","7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d","f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files"}
+[debug] [2021-08-23T14:02:03.099Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [none]
+[debug] [2021-08-23T14:02:03.099Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [stream]
+[debug] [2021-08-23T14:02:03.102Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [none]
+[debug] [2021-08-23T14:02:03.102Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [stream]
+[debug] [2021-08-23T14:02:03.103Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [none]
+[debug] [2021-08-23T14:02:03.104Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [stream]
+[debug] [2021-08-23T14:02:03.105Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [none]
+[debug] [2021-08-23T14:02:03.105Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [stream]
+[debug] [2021-08-23T14:02:03.105Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [none]
+[debug] [2021-08-23T14:02:03.105Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [stream]
+[debug] [2021-08-23T14:02:03.107Z] [hosting][populate queue][FINAL] {"max":3004,"min":3004,"avg":3004,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":3012}
+[debug] [2021-08-23T14:02:03.107Z] [hosting] uploads queued: 5
+[debug] [2021-08-23T14:02:33.503Z] [uploadQueue] Retrying task 250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0
+[debug] [2021-08-23T14:02:33.505Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [none]
+[debug] [2021-08-23T14:02:33.506Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [stream]
+[debug] [2021-08-23T14:02:39.340Z] [uploadQueue] Retrying task f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c
+[debug] [2021-08-23T14:02:39.341Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [none]
+[debug] [2021-08-23T14:02:39.342Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [stream]
+[debug] [2021-08-23T14:02:41.417Z] [uploadQueue] Retrying task 337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a
+[debug] [2021-08-23T14:02:41.419Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [none]
+[debug] [2021-08-23T14:02:41.419Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [stream]
+[debug] [2021-08-23T14:03:03.276Z] [uploadQueue] Retrying task af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58
+[debug] [2021-08-23T14:03:03.283Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [none]
+[debug] [2021-08-23T14:03:03.284Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [stream]
+[debug] [2021-08-23T14:03:04.308Z] [uploadQueue] Retrying task 250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0
+[debug] [2021-08-23T14:03:04.309Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [none]
+[debug] [2021-08-23T14:03:04.310Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [stream]
+[debug] [2021-08-23T14:03:09.520Z] [uploadQueue] Retrying task 7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d
+[debug] [2021-08-23T14:03:09.525Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [none]
+[debug] [2021-08-23T14:03:09.525Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [stream]
+[debug] [2021-08-23T14:03:15.983Z] [uploadQueue] Retrying task f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c
+[debug] [2021-08-23T14:03:15.984Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [none]
+[debug] [2021-08-23T14:03:15.985Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [stream]
+[debug] [2021-08-23T14:03:20.140Z] [uploadQueue] Retrying task 337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a
+[debug] [2021-08-23T14:03:20.141Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [none]
+[debug] [2021-08-23T14:03:20.142Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [stream]
+[debug] [2021-08-23T14:03:35.911Z] [uploadQueue] Retrying task 250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0
+[debug] [2021-08-23T14:03:35.912Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [none]
+[debug] [2021-08-23T14:03:35.912Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [stream]
+[debug] [2021-08-23T14:03:53.427Z] [uploadQueue] Retrying task f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c
+[debug] [2021-08-23T14:03:53.428Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [none]
+[debug] [2021-08-23T14:03:53.428Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [stream]
+[debug] [2021-08-23T14:03:59.662Z] [uploadQueue] Retrying task 337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a
+[debug] [2021-08-23T14:03:59.664Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [none]
+[debug] [2021-08-23T14:03:59.664Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [stream]
+[debug] [2021-08-23T14:04:03.858Z] [uploadQueue] Retrying task af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58
+[debug] [2021-08-23T14:04:03.860Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [none]
+[debug] [2021-08-23T14:04:03.860Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/af3da996ce1ab5c8c7d4e5610ce757dc6d763f89747d8d4e82588d56ecda6f58 [stream]
+[debug] [2021-08-23T14:04:09.112Z] [uploadQueue] Retrying task 250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0
+[debug] [2021-08-23T14:04:09.114Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [none]
+[debug] [2021-08-23T14:04:09.115Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [stream]
+[debug] [2021-08-23T14:04:16.345Z] [uploadQueue] Retrying task 7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d
+[debug] [2021-08-23T14:04:16.346Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [none]
+[debug] [2021-08-23T14:04:16.346Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/7b7b97a8a7758a25e861b86ba3cabd7a311a76d01af1adb9269fe5c36c9aac2d [stream]
+[debug] [2021-08-23T14:04:32.469Z] [uploadQueue] Retrying task f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c
+[debug] [2021-08-23T14:04:32.471Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [none]
+[debug] [2021-08-23T14:04:32.471Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/f059aaae8e585f300eda008318c9ad954f443beff635da4bfba05cfbe4c9753c [stream]
+[debug] [2021-08-23T14:04:40.785Z] [uploadQueue] Retrying task 337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a
+[debug] [2021-08-23T14:04:40.786Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [none]
+[debug] [2021-08-23T14:04:40.787Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/337fc4b984080b54d486866232dc82748ac07f08d9bccd79740895f08634853a [stream]
+[debug] [2021-08-23T14:04:45.514Z] [uploadQueue] Retrying task 250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0
+[debug] [2021-08-23T14:04:45.516Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [none]
+[debug] [2021-08-23T14:04:45.516Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/jio-flix-mediacompany/versions/73277e88b506dd67/files/250e9f60b9b4e8f4491cc7524690400fd7d8b7d3d7c9a13c57f58253d66fe7a0 [stream]
