@@ -1,18 +1,22 @@
-# Mediacompany
-
-Created 3 pages - Home page, About page and Gallery page.
-
-Gallery page - Only private users can access it. Implemented by using Auth-guard. If try to access from logged out state it will navigate to home page and prompt dialog to login into the application.
-
-Home page - Implemented textarea box for private users.
-
-About page - Displayed some static information about the application.
+# JioInsights
 
 Implemented the Login and Logout functionality as for application flow.
+
+By using the users endpoint, application can be authenticated.
+
+After login, there will be a dropdown for selecting the companies based on the selection, the company details will be displayed. But there for two companies, logo link is not working.
+
+Implemented the view all companies page for listing all the companies data in a grid manner.
+
+But there is no relation between companies and contact API. I need a clarification to creating,updating and deleting a form. Also there is no API for this implementation.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
 ## Development server
+
+Install:
+
+Run `npm install` after cloning the master branch.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
