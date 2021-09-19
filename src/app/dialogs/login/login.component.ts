@@ -13,6 +13,7 @@ import { LoginService } from './login.service';
 export class LoginComponent implements OnInit {
 
   public incorrect: boolean = false;
+  public usersList: any[] = [];
   loginForm: FormGroup;
 
   constructor(
@@ -22,8 +23,7 @@ export class LoginComponent implements OnInit {
     public dialog: MatDialog,
     private router: Router) {
     this.loginForm = this.formBuilder.group({
-      email: ['', Validators.required],
-      password: ['', Validators.required]
+      email: ['', Validators.required]
   });
   }
 
@@ -37,16 +37,6 @@ export class LoginComponent implements OnInit {
           return 'Email required';
         }
         break;
-      case 'pass':
-        if (this.loginForm.get('password')?.hasError('required')) {
-          return 'Password required';
-        }
-        break;
-      case 'incorrect':
-        if(el === 'incorrect') {
-          return 'Incorrect email or password!';
-        }
-        break;
       default:
         return '';
     }
@@ -54,20 +44,23 @@ export class LoginComponent implements OnInit {
   }
 
   submit() {
-    const users = this.loginService.getUserList();
-    const isLoggedIn = users.filter((item, index) => item.userid === this.loginForm.value.email && item.password === this.loginForm.value.password);
-    if(isLoggedIn && isLoggedIn.length > 0 && isLoggedIn.length !== 0) {
-      this.authGuardService.isLogged(true);
-      this.dialog.closeAll();
-      this.router.navigate(['/gallery']);
-      let userName = '';
-      for(let user of isLoggedIn) {
-        userName = user.username;
+    this.loginService.getUserList().subscribe((data: any) => {
+      console.log(data);
+      this.usersList = data;
+      const isLoggedIn = this.usersList.filter((item, index) => item.email === this.loginForm.value.email);
+      if(isLoggedIn && isLoggedIn.length > 0 && isLoggedIn.length !== 0) {
+        this.authGuardService.isLogged(true);
+        this.dialog.closeAll();
+        this.router.navigate(['/home']);
+        let userName = '';
+        for(let user of isLoggedIn) {
+          userName = user.firstName;
+        }
+        localStorage.setItem('users', userName);
+      } else if(isLoggedIn.length === 0){
+        this.incorrect = true;
+        this.authGuardService.isLogged(false);
       }
-      localStorage.setItem('users', userName);
-    } else if(isLoggedIn.length === 0){
-      this.incorrect = true;
-      this.authGuardService.isLogged(false);
-    }
+    });
   }
 }

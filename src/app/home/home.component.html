@@ -3,39 +3,72 @@
   <div class="container centered">
     <div class="list-users" *ngIf="isAuthenticated()">
       <form class="example-form">
-        <mat-card style="width: 100%;">
+        <mat-card style="width: 100%;height: 550px;position: absolute;">
 
-          <mat-form-field class="example-full-width" appearance="outline">
-            <mat-label>Choose</mat-label>
-            <mat-chip-list #chipList aria-label="User selection">
-              <mat-chip
-                *ngFor="let user of users"
-                [selectable]="selectable"
-                [removable]="removable"
-                (removed)="remove(user)">
-                {{ user }}
-              </mat-chip>
-              <input
-                placeholder="Type '@' to select a user..."
-                #userInput
-                [formControl]="userCtrl"
-                [matAutocomplete]="auto"
-                [matChipInputFor]="chipList"
-                [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-                (matChipInputTokenEnd)="add($event)">
-            </mat-chip-list>
-            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
-              <mat-option *ngFor="let user of filteredUsers | async" [value]="user">
-                {{ user.username }}
-              </mat-option>
-            </mat-autocomplete>
-          </mat-form-field>
+          <mat-card-title class="login-title">Companies Contact Information</mat-card-title><br>
+          <mat-card-content>
+            <div class="row col-md-12">
+              <div class="col-md-6">
+                <mat-form-field appearance="outline" floatLabel="auto">
+                  <mat-label>Select Company</mat-label>
+                  <mat-select (selectionChange)="onSelect($event.value)">
+                    <mat-option [value]="option.name" *ngFor="let option of allCompanies">{{ option.name }}</mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <form [formGroup]="contactForm" (ngSubmit)="submit()">
+
+                  <p>
+                    <mat-form-field appearance="outline" floatLabel="auto">
+                      <input type="text" matInput placeholder="Name" formControlName="name">
+                      <mat-error *ngIf="contactForm.controls['name'].invalid">
+                        {{getError('name')}}
+                      </mat-error>
+                    </mat-form-field>
+                  </p>
+
+                  <p>
+                    <mat-form-field appearance="outline" floatLabel="auto">
+                      <input type="text" matInput placeholder="Country" formControlName="country">
+                      <mat-error *ngIf="contactForm.controls['country'].invalid">
+                        {{getError('country')}}
+                      </mat-error>
+                    </mat-form-field>
+                  </p>
+
+                  <p>
+                    <mat-form-field appearance="outline" floatLabel="auto">
+                      <input type="text" matInput placeholder="Phone" formControlName="phone">
+                      <mat-error *ngIf="contactForm.controls['phone'].invalid">
+                        {{getError('phone')}}
+                      </mat-error>
+                    </mat-form-field>
+                  </p>
+
+                <div class="button">
+                  <button type="submit" mat-button class="login-button"
+                  [disabled]="!contactForm.valid">Add</button>
+                </div>
+
+                </form>
+              </div>
+              <div class="col-md-6">
+                <mat-card class="example-card" *ngIf="company">
+                  <mat-card-header>
+                    <mat-card-title>{{ company.name}}</mat-card-title>
+                  </mat-card-header>
+                  <img mat-card-image [src]="company.logo" [alt]="company.name">
+                  <mat-card-content>
+                    <p>
+                      {{ company.description }}
+                    </p>
+                  </mat-card-content>
+                </mat-card>
+              </div>
+            </div>
+
+          </mat-card-content>
         </mat-card>
       </form>
     </div>
-  </div>
-  <div class="centered-right">
-    <h2 class="title">Unlimited movies, TV shows and more.</h2>
-    <h4 class="sub-title">Watch Anytime and Anywhere.</h4>
   </div>
 </div>

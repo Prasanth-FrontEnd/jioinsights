@@ -11,6 +11,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatInputModule,
     MatAutocompleteModule,
     MatChipsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatSelectModule
   ],
   exports: [
     MatToolbarModule,
@@ -40,8 +42,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatInputModule,
     MatAutocompleteModule,
     MatChipsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatSelectModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class MediacompanySharedModuleModule { }
+export class JioinsightsSharedModuleModule { }

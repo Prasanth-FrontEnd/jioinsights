@@ -1,23 +1,21 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './home.component';
+import { ViewCompaniesRoutingModule } from './viewcompanies-routing.module';
+import { ViewcompaniesComponent } from './viewcompanies.component';
 import { JioinsightsSharedModuleModule } from '../shared/jioinsightscompany-shared-module/jioinsightscompany-shared-module.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    ViewcompaniesComponent
   ],
   imports: [
     CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HomeRoutingModule,
+    ViewCompaniesRoutingModule,
     JioinsightsSharedModuleModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class HomeModule { }
+export class ViewCompaniesModule { }

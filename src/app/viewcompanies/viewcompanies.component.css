@@ -1,10 +1,3 @@
-.carousel-inner {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  height: 400px;
-}
-
 mat-grid-tile {
   padding-top: 240px !important;
 }
@@ -27,12 +20,15 @@ ngb-rating {
 }
 
 .example-card {
-  max-width: 400px;
+  max-width: 350px;
+  border: 1px solid #f2904c;
+  margin-right: 10px;
 }
 
 .mat-card{
   display:flex;
   flex-direction: column;
+  float: left !important;
 }
 
 .mat-card-header {

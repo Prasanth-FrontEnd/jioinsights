@@ -12,7 +12,6 @@ import { LoginComponent } from 'src/app/dialogs/login/login.component';
 export class HeaderComponent implements OnInit {
 
   public isLoggedIn: boolean = false;
-  public userName: string = '';
 
   constructor(
     public dialog: MatDialog,
@@ -24,7 +23,6 @@ export class HeaderComponent implements OnInit {
     this.authGuardService.isAuthenticated.subscribe(result => {
       if (result === true) {
         this.isLoggedIn = true;
-        this.userName = localStorage.getItem('users') || '';
       }
     });
   }
@@ -41,6 +39,7 @@ export class HeaderComponent implements OnInit {
   logout() {
     this.router.navigate(['/home']);
     this.isLoggedIn = false;
+    localStorage.removeItem('users');
     this.authGuardService.isLogged(false);
   }
 }

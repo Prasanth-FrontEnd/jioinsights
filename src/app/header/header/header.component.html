@@ -1,21 +1,15 @@
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span class="text-uppercase">JioFlix</span>
+    <span class="text-uppercase">JioInsights</span>
     <span class="example-spacer"></span>
     <button mat-button routerLink="/home" routerLinkActive="active">
       <span>Home</span>
     </button>
-    <button mat-button *ngIf="isLoggedIn" routerLink="/gallery" routerLinkActive="active">
-      <span>Gallery</span>
-    </button>
-    <button mat-button routerLink="/about" routerLinkActive="active">
-      <span>About</span>
+    <button mat-button routerLink="/companies" routerLinkActive="active" *ngIf="isLoggedIn">
+      <span>View Companies</span>
     </button>
     <button mat-button (click)="login()" *ngIf="!isLoggedIn">
       <span>Login</span>
-    </button>
-    <button mat-button *ngIf="isLoggedIn">
-      <span>{{ userName }}</span>
     </button>
     <button mat-button (click)="logout()" *ngIf="isLoggedIn">
       <span>Logout</span>

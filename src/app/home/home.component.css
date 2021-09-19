@@ -11,8 +11,8 @@
 }
 .centered {
   position: absolute;
-  top: 67%;
-  left: 60%;
+  top: 25%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 .centered-right {
@@ -41,7 +41,7 @@
 
 .example-form {
   min-width: 150px;
-  max-width: 500px;
+  max-width: 900px;
   width: 100%;
 }
 
@@ -63,4 +63,37 @@
   cursor: default;
   min-height: 32px;
   height: 1px;
+}
+
+.mat-form-field {
+  width: 100%;
+  min-width: 300px;
+}
+
+/* mat-card-title,
+mat-card-content {
+  display: flex;
+  justify-content: center;
+} */
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login-title {
+  color: #f2904c;
+}
+
+.login-button {
+  color: white;
+  background: #f2904c;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-size: cover;
 }

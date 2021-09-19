@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthenticationGuard } from '../auth/authentication.guard';
-import { GalleryComponent } from './gallery.component';
+import { ViewcompaniesComponent } from './viewcompanies.component';
 
 const routes: Routes = [
   {
-    path: 'gallery',
-    component: GalleryComponent,
+    path: 'companies',
+    component: ViewcompaniesComponent,
     canActivate: [AuthenticationGuard]
   }
 ];
@@ -15,4 +15,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class GalleryRoutingModule { }
+export class ViewCompaniesRoutingModule { }

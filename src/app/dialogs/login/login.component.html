@@ -12,15 +12,6 @@
       </mat-form-field>
     </p>
 
-    <p>
-      <mat-form-field appearance="outline" floatLabel="auto">
-        <input type="password" matInput placeholder="Password" formControlName="password">
-        <mat-error *ngIf="!loginForm.controls['password'].valid">
-          {{getError('pass')}}
-        </mat-error>
-      </mat-form-field>
-    </p>
-
     <p *ngIf="incorrect" class="error">
       <mat-error>
         {{getError('incorrect')}}

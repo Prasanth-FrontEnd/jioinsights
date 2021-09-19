@@ -1,24 +1,24 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 export interface Login {
-  userid: string;
-  password: string;
-  username: string;
+  id: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  age: number;
+  companyId: number;
 }
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
+  private getUserListUrl = 'https://my-json-server.typicode.com/bokadedarvin/AngularDeveloperSample/users';
 
-  private  userList: Login[] = [
-    { userid : 'abc@media.com', password:'abc123', username:'tom'},
-    { userid : 'def@media.com',password:'def123', username: 'dick'}
-  ];
-
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   getUserList() {
-    return this.userList.slice();
+    return this.http.get(this.getUserListUrl);
   }
 }
