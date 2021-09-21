@@ -4,6 +4,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { AuthguardService } from 'src/app/auth/authguard.service';
 import { LoginService } from './login.service';
+import { PasswordStrengthValidator } from './password-strength.validators';
 
 @Component({
   selector: 'app-login',
@@ -23,7 +24,10 @@ export class LoginComponent implements OnInit {
     public dialog: MatDialog,
     private router: Router) {
     this.loginForm = this.formBuilder.group({
-      email: ['', Validators.required]
+      email: ['', Validators.required],
+      password: ['',
+        Validators.compose([
+        Validators.required, Validators.minLength(8), Validators.maxLength(16), PasswordStrengthValidator])]
   });
   }
 
@@ -34,7 +38,12 @@ export class LoginComponent implements OnInit {
     switch (el) {
       case 'email':
         if (this.loginForm.get('email')?.hasError('required')) {
-          return 'Email required';
+          return 'Email is required';
+        }
+        break;
+      case 'password':
+        if (this.loginForm.get('password')?.errors) {
+          return 'Password is required';
         }
         break;
       default:
@@ -45,7 +54,6 @@ export class LoginComponent implements OnInit {
 
   submit() {
     this.loginService.getUserList().subscribe((data: any) => {
-      console.log(data);
       this.usersList = data;
       const isLoggedIn = this.usersList.filter((item, index) => item.email === this.loginForm.value.email);
       if(isLoggedIn && isLoggedIn.length > 0 && isLoggedIn.length !== 0) {

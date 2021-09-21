@@ -3,60 +3,23 @@
   <div class="container centered">
     <div class="list-users" *ngIf="isAuthenticated()">
       <form class="example-form">
-        <mat-card style="width: 100%;height: 550px;position: absolute;">
+        <mat-card style="width: 50%;height: 550px;position: absolute;">
 
           <mat-card-title class="login-title">Companies Contact Information</mat-card-title><br>
           <mat-card-content>
             <div class="row col-md-12">
               <div class="col-md-6">
-                <mat-form-field appearance="outline" floatLabel="auto">
+                <mat-form-field appearance="outline" floatLabel="auto" style="width: 510px;">
                   <mat-label>Select Company</mat-label>
                   <mat-select (selectionChange)="onSelect($event.value)">
                     <mat-option [value]="option.name" *ngFor="let option of allCompanies">{{ option.name }}</mat-option>
                   </mat-select>
                 </mat-form-field>
-                <form [formGroup]="contactForm" (ngSubmit)="submit()">
-
-                  <p>
-                    <mat-form-field appearance="outline" floatLabel="auto">
-                      <input type="text" matInput placeholder="Name" formControlName="name">
-                      <mat-error *ngIf="contactForm.controls['name'].invalid">
-                        {{getError('name')}}
-                      </mat-error>
-                    </mat-form-field>
-                  </p>
-
-                  <p>
-                    <mat-form-field appearance="outline" floatLabel="auto">
-                      <input type="text" matInput placeholder="Country" formControlName="country">
-                      <mat-error *ngIf="contactForm.controls['country'].invalid">
-                        {{getError('country')}}
-                      </mat-error>
-                    </mat-form-field>
-                  </p>
-
-                  <p>
-                    <mat-form-field appearance="outline" floatLabel="auto">
-                      <input type="text" matInput placeholder="Phone" formControlName="phone">
-                      <mat-error *ngIf="contactForm.controls['phone'].invalid">
-                        {{getError('phone')}}
-                      </mat-error>
-                    </mat-form-field>
-                  </p>
-
-                <div class="button">
-                  <button type="submit" mat-button class="login-button"
-                  [disabled]="!contactForm.valid">Add</button>
-                </div>
-
-                </form>
-              </div>
-              <div class="col-md-6">
                 <mat-card class="example-card" *ngIf="company">
                   <mat-card-header>
                     <mat-card-title>{{ company.name}}</mat-card-title>
                   </mat-card-header>
-                  <img mat-card-image [src]="company.logo" [alt]="company.name">
+                  <img mat-card-image [src]="company.logo" [alt]="company.name" height="180px">
                   <mat-card-content>
                     <p>
                       {{ company.description }}

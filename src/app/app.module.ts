@@ -11,9 +11,8 @@ import { HeaderComponent } from './header/header/header.component';
 import { FooterComponent } from './footer/footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeModule } from './home/home.module';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ViewcompaniesComponent } from './viewcompanies/viewcompanies.component';
 import { ViewCompaniesModule } from './viewcompanies/viewcompanies.module';
+import { ViewContactsModule } from './viewcontacts/viewcontacts.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,8 @@ import { ViewCompaniesModule } from './viewcompanies/viewcompanies.module';
     ReactiveFormsModule,
     JioinsightsSharedModuleModule,
     HomeModule,
-    ViewCompaniesModule
+    ViewCompaniesModule,
+    ViewContactsModule
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

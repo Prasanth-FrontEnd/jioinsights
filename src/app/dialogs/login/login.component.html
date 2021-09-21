@@ -12,6 +12,24 @@
       </mat-form-field>
     </p>
 
+    <p>
+      <mat-form-field appearance="outline" floatLabel="auto">
+        <input type="password" matInput placeholder="Password" formControlName="password">
+        <mat-error *ngIf="loginForm.controls.password.invalid">
+          {{getError('password')}}
+        </mat-error>
+        <mat-error *ngIf="loginForm.controls.password.errors?.minlength">
+          Minimum 8 characters is required.
+        </mat-error>
+        <mat-error *ngIf="loginForm.controls.password.errors?.maxlength">
+          Maximum 16 characters is required.
+        </mat-error>
+        <mat-error *ngIf="loginForm.get('password')?.hasError('passwordStrength')">
+          {{ loginForm.get('password')?.errors['passwordStrength'] }}
+        </mat-error>
+      </mat-form-field>
+    </p>
+
     <p *ngIf="incorrect" class="error">
       <mat-error>
         {{getError('incorrect')}}

@@ -12,8 +12,7 @@
 .centered {
   position: absolute;
   top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 22%;
 }
 .centered-right {
   position: absolute;
@@ -91,7 +90,8 @@ mat-card-content {
 }
 
 .example-card {
-  max-width: 400px;
+  width: 510px;
+  border: 2px solid #f2904c;
 }
 
 .example-header-image {

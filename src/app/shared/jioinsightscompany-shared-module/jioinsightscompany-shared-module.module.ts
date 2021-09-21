@@ -12,7 +12,7 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatSelectModule} from '@angular/material/select';
-
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatAutocompleteModule,
     MatChipsModule,
     MatGridListModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSnackBarModule
   ],
   exports: [
     MatToolbarModule,
@@ -43,7 +44,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatAutocompleteModule,
     MatChipsModule,
     MatGridListModule,
-    MatSelectModule
+    MatSelectModule,
+    MatSnackBarModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

@@ -1,0 +1,52 @@
+mat-grid-tile {
+  padding-top: 240px !important;
+}
+
+.mat-grid-list {
+  display: block;
+  position: relative;
+  padding-bottom: 240px !important;
+}
+
+h2 {
+  margin-bottom: 0px !important;
+  color: #f2904c;
+}
+
+ngb-rating {
+  color: #FFC107;
+  font-size: 20px;
+  float: right;
+}
+
+.example-card {
+  width: 515px;
+  border: 1px solid #f2904c;
+  margin-right: 10px;
+}
+
+.mat-card{
+  display:flex;
+  flex-direction: column;
+  float: left !important;
+  flex-flow: wrap-reverse;
+  margin-bottom: 8px;
+}
+
+.mat-card-header {
+  flex-shrink: 0;
+}
+
+.mat-card-content{
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.contact-title {
+  color: #f2904c;
+}
+
+.contact-button {
+  color: white;
+  background: #f2904c;
+}

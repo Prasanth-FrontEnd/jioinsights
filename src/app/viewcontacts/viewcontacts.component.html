@@ -1,0 +1,77 @@
+
+<div class="container" style="height: 641px !important;"><br>
+
+  <h2>Contacts List</h2>
+
+  <div class="row col-md-12">
+    <div class="col-md-6" style="max-height: 450px;overflow: auto;">
+      <mat-card class="example-card" *ngFor="let contact of allContacts;">
+        <div class="row col-md-12">
+          <div class="col-md-4">
+            <mat-card-header>
+              <mat-card-title>{{ contact.name}}</mat-card-title>
+            </mat-card-header>
+          </div>
+          <div class="col-md-6">
+            <mat-card-content>
+              <p>
+                {{ contact.country }}
+              </p>
+              <p>
+                {{ contact.phone }}
+              </p>
+            </mat-card-content>
+          </div>
+          <div class="col-md-2">
+            <mat-card-actions>
+              <button type="button" mat-button class="contact-button" style="margin-bottom: 8px;" (click)="updateContact(contact)">Edit</button>
+              <button type="button" mat-button class="contact-button" style="right: 8px;" (click)="deleteContactForm(contact)">Delete</button>
+            </mat-card-actions>
+          </div>
+        </div>
+
+      </mat-card>
+    </div>
+    <div class="col-md-2" style="width: 100px;height: 35px;"></div>
+    <h2 class="contact-title">Contact Form</h2>
+    <div class="col-md-4">
+      <form [formGroup]="contactForm">
+
+        <p>
+          <mat-form-field appearance="outline" floatLabel="auto" style="width: 510px;">
+            <input type="text" matInput placeholder="Name" formControlName="name">
+            <mat-error *ngIf="contactForm.controls['name'].invalid">
+              {{getError('name')}}
+            </mat-error>
+          </mat-form-field>
+        </p>
+
+        <p>
+          <mat-form-field appearance="outline" floatLabel="auto" style="width: 510px;">
+            <input type="text" matInput placeholder="Country" formControlName="country">
+            <mat-error *ngIf="contactForm.controls['country'].invalid">
+              {{getError('country')}}
+            </mat-error>
+          </mat-form-field>
+        </p>
+
+        <p>
+          <mat-form-field appearance="outline" floatLabel="auto" style="width: 510px;">
+            <input type="text" matInput placeholder="Phone" formControlName="phone">
+            <mat-error *ngIf="contactForm.controls['phone'].invalid">
+              {{getError('phone')}}
+            </mat-error>
+          </mat-form-field>
+        </p>
+
+      <div class="button">
+        <button type="button" mat-button class="contact-button" (click)="submit()"
+        [disabled]="!contactForm.valid">{{ buttonText }}</button>
+      </div>
+
+      </form>
+    </div>
+  </div>
+
+
+</div>

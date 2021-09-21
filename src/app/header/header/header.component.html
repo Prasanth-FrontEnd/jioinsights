@@ -8,6 +8,9 @@
     <button mat-button routerLink="/companies" routerLinkActive="active" *ngIf="isLoggedIn">
       <span>View Companies</span>
     </button>
+    <button mat-button routerLink="/contacts" routerLinkActive="active" *ngIf="isLoggedIn">
+      <span>View Contacts</span>
+    </button>
     <button mat-button (click)="login()" *ngIf="!isLoggedIn">
       <span>Login</span>
     </button>
